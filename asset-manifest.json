@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.fd55233d.css",
-    "main.js": "/my-app/static/js/main.593654e9.js",
+    "main.js": "/my-app/static/js/main.65bbff40.js",
     "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/sneaker3.jpg": "/my-app/static/media/sneaker3.5f4efca7f2ae01790e6e.jpg",
     "static/media/sneaker2.jpg": "/my-app/static/media/sneaker2.4840471bd3d50662e48c.jpg",
@@ -10,11 +10,11 @@
     "static/media/404_3.jpg": "/my-app/static/media/404_3.d91ba3e51a3be07d13fa.jpg",
     "index.html": "/my-app/index.html",
     "main.fd55233d.css.map": "/my-app/static/css/main.fd55233d.css.map",
-    "main.593654e9.js.map": "/my-app/static/js/main.593654e9.js.map",
+    "main.65bbff40.js.map": "/my-app/static/js/main.65bbff40.js.map",
     "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd55233d.css",
-    "static/js/main.593654e9.js"
+    "static/js/main.65bbff40.js"
   ]
 }
