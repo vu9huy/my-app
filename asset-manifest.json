@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd55233d.css",
-    "main.js": "/static/js/main.cac8587d.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/sneaker3.jpg": "/static/media/sneaker3.5f4efca7f2ae01790e6e.jpg",
-    "static/media/sneaker2.jpg": "/static/media/sneaker2.4840471bd3d50662e48c.jpg",
-    "static/media/sneaker1.jpg": "/static/media/sneaker1.079c0950823f49a8df59.jpg",
-    "static/media/sneaker4.jpg": "/static/media/sneaker4.48b87fe77f649ee0965b.jpg",
-    "static/media/404_3.jpg": "/static/media/404_3.d91ba3e51a3be07d13fa.jpg",
-    "index.html": "/index.html",
-    "main.fd55233d.css.map": "/static/css/main.fd55233d.css.map",
-    "main.cac8587d.js.map": "/static/js/main.cac8587d.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/my-app/static/css/main.fd55233d.css",
+    "main.js": "/my-app/static/js/main.593654e9.js",
+    "static/js/787.28cb0dcd.chunk.js": "/my-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/sneaker3.jpg": "/my-app/static/media/sneaker3.5f4efca7f2ae01790e6e.jpg",
+    "static/media/sneaker2.jpg": "/my-app/static/media/sneaker2.4840471bd3d50662e48c.jpg",
+    "static/media/sneaker1.jpg": "/my-app/static/media/sneaker1.079c0950823f49a8df59.jpg",
+    "static/media/sneaker4.jpg": "/my-app/static/media/sneaker4.48b87fe77f649ee0965b.jpg",
+    "static/media/404_3.jpg": "/my-app/static/media/404_3.d91ba3e51a3be07d13fa.jpg",
+    "index.html": "/my-app/index.html",
+    "main.fd55233d.css.map": "/my-app/static/css/main.fd55233d.css.map",
+    "main.593654e9.js.map": "/my-app/static/js/main.593654e9.js.map",
+    "787.28cb0dcd.chunk.js.map": "/my-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd55233d.css",
-    "static/js/main.cac8587d.js"
+    "static/js/main.593654e9.js"
   ]
 }
