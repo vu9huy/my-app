@@ -1,0 +1,32 @@
+
+
+.input-otp{
+    width: 3rem !important;
+    height: 3rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    outline-color:#3273dc;
+}
+.input-otp-action{
+    button{
+    background-color: #3398d4;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+    }
+    .disabled-btn{
+        background-color: #63b3ed;
+        cursor: auto;
+    }
+}
+.generate-otp{
+    .display-otp{
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

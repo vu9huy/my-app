@@ -1,0 +1,157 @@
+
+    .loading {
+        border: 6px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 6px solid #3498db;
+        width: 28px;
+        height: 28px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+.weather-app-search{
+    margin-left: 154px;
+    .loading.wait-search{
+        margin-top: 12px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .no-result{
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+    input{
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-shadow: 0px -1px 3px  #ccc ;
+        outline: none;
+    }
+    input:focus{
+        border-color: #66afe9;
+        box-shadow: 0px -1px 5px  #8fbce0 ;
+
+    }
+    button{
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: center;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    button:hover{
+        background-color: #2e6da4;
+    }
+        .weather-app-search-result{
+            display: inline-flex;
+            flex-direction: column;
+            padding: 0 0 20px 20px;
+            list-style-type: disc;
+            .location-response{
+                cursor: pointer;
+                color: #337ab7;
+                // display: inline-block;
+                display: list-item;
+            }
+        }
+}
+.display-detail{
+    display: flex;
+    flex-direction: column;
+    .loading{
+        margin-left: 154px;
+    }
+    .display-detail-container{
+        // margin: 0 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 13px;
+        gap: 20px;
+        line-height: 1.5;
+        .location-preview{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 170px;
+            margin-right: 20px;
+            .display-detail-city{
+                font-size: 20px;
+                color: #337ab7;
+                line-height: 1;
+            }
+        }
+        .weather-child{
+            width: 165px;
+            height: 170px;
+            .weather-child-date{
+                font-size: 15px;
+                font-weight: 500;
+                color: #337ab7;
+            }
+            .weather-child-state{
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 8px;
+                }
+                span{
+                    display: flex;
+                    align-items: flex-end;
+                    
+                }
+            }
+            .weather-child-temp{
+                display: flex;
+                flex-direction: column;
+                margin-top: 12px;
+                line-height: 1;
+            }
+            .weather-child-wind{
+                margin-top: 12px;
+                display: flex;
+                flex-direction: row;
+                gap: 4px;
+                .wind-direction{
+                    width: 14px;
+                    height: 14px;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+            
+        }
+        
+        
+    }
+}
+
+.hanoi{
+    .loading{
+        margin-left: 154px;
+    }
+}
