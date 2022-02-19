@@ -9,7 +9,6 @@ const GenerateOTP = (props) => {
         setOtp(creatOTP);
         props.setOtpOriginalParent(creatOTP);
     }
-
     return (
         <div className="generate-otp">
             <div className="display-otp">Your OTP is: {otp}</div>

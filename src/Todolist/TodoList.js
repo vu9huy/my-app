@@ -31,7 +31,6 @@ const TodoList = () => {
         setTodo={setTodo}
         handleDeleteJob={handleDeleteJob}
       />
-
     </div>
   );
 }

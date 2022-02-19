@@ -48,7 +48,7 @@ const WeatherHanoi = (props) => {
                     {!!weatherArr.length && weatherArr.map((weather, index) => {
                         return <div key={index}>
                             <WeatherChild
-                                applicableDate={weather.applicable_date}
+                                applicableDate={moment(weather.applicable_date).format("ddd D MMM YY")}
                                 weatherStateName={weather.weather_state_name}
                                 weatherStateAbbr={weather.weather_state_abbr}
                                 minTemp={weather.min_temp}

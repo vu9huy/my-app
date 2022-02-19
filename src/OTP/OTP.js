@@ -6,9 +6,6 @@ import './OTP.scss';
 const OTP = () => {
     const [otpOriginalParent, setOtpOriginalParent] = useState('');
     const [otpComfirmParent, setOtpComfirmParent] = useState('');
-
-
-
     function handleComfirmOTP() {
         if (!otpOriginalParent) {
             alert('Please regenate an OTP...')
@@ -24,8 +21,6 @@ const OTP = () => {
             alert('Wrong OTP!');
         }
     }
-
-
     return (
         <div className='otp-container'>
             <GenerateOTP

@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import OtpInput from 'react-otp-input';
-import Countdown from './Countdown';
+import CountdownAnimation from './CountdownAnimation';
 
 const InputOTP = (props) => {
     const [otpComfirm, setOtpComfirm] = useState('');
-    const [isDisabled, setIsDissble] = useState(false);
+    const [isDisabled, setIsDisabled] = useState(false);
+    const [test, setTest] = useState(false)
 
     function handleChangeInputOTP(otpComfirm) {
         setOtpComfirm(otpComfirm);
@@ -12,7 +13,8 @@ const InputOTP = (props) => {
     }
     function handleClearInputOTP() {
         setOtpComfirm('');
-
+        setTest(true);
+        // setTest(false);
     }
     function handleComfirmInputOTP() {
         props.handleComfirmOTP();
@@ -27,11 +29,13 @@ const InputOTP = (props) => {
                 separator={<span>-</span>}
                 inputStyle={'input-otp'}
             />
-            <Countdown
+            <CountdownAnimation
                 isDisabled={isDisabled}
-                setIsDissble={setIsDissble}
-                isResetTimer={props.isResetTimer}
+                setIsDisabled={setIsDisabled}
+                test={test}
+                setTest={setTest}
             />
+
             <div className='input-otp-action'>
                 <button onClick={() => handleClearInputOTP()} className='otp-clear-btn'>Clear</button>
                 <button className={isDisabled ? 'otp-comfirm-btn disabled-btn' : 'otp-comfirm-btn'} disabled={isDisabled} onClick={() => handleComfirmInputOTP()} >Comfirm</button>
