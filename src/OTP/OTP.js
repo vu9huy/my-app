@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import GenerateOTP from './GenerateOTP';
 import InputOTP from './InputOTP';
 import './OTP.scss';
 
@@ -23,10 +22,8 @@ const OTP = () => {
     }
     return (
         <div className='otp-container'>
-            <GenerateOTP
-                setOtpOriginalParent={setOtpOriginalParent}
-            />
             <InputOTP
+                setOtpOriginalParent={setOtpOriginalParent}
                 setOtpComfirmParent={setOtpComfirmParent}
                 handleComfirmOTP={handleComfirmOTP}
             />

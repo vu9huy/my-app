@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, forwardRef, useImperativeHandle } from "react";
 import './CountdownAnimation.scss';
 
-const CountdownAnimation = (props) => {
+const CountdownAnimation = forwardRef((props, ref) => {
     const FULL_DASH_ARRAY = 283;
     const WARNING_THRESHOLD = 10;
     const ALERT_THRESHOLD = 5;
-
     const COLOR_CODES = {
         info: {
             color: "green"
@@ -19,7 +18,6 @@ const CountdownAnimation = (props) => {
             threshold: ALERT_THRESHOLD
         }
     };
-
     const TIME_LIMIT = 20;
     let timerInterval = null;
     let remainingPathColor = COLOR_CODES.info.color;
@@ -95,6 +93,22 @@ const CountdownAnimation = (props) => {
         return () => { clearInterval(timer) }
     }, [timeLeft])
 
+    useImperativeHandle(ref, () => ({
+        resetTimer() {
+            const { alert, warning, info } = COLOR_CODES;
+            document
+                .getElementById("base-timer-path-remaining")
+                .classList.remove(alert.color);
+            document
+                .getElementById("base-timer-path-remaining")
+                .classList.remove(warning.color);
+            setTimeLeft(TIME_LIMIT);
+            document
+                .getElementById("base-timer-path-remaining")
+                .classList.add(info.color);
+            setTimeLeft(TIME_LIMIT);
+        }
+    }));
     return (
         <div className="countdown-animation-container">
             <div className="base-timer">
@@ -115,6 +129,6 @@ const CountdownAnimation = (props) => {
                 <span id="base-timer-label" className="base-timer__label">{formatTime(timeLeft)}</span>
             </div>
         </div>)
-}
+})
 
 export default CountdownAnimation;
