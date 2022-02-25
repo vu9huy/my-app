@@ -15,7 +15,7 @@ const Search = () => {
         setIsLoading(true);
         let responseSearch = await axios({
             method: 'post',
-            url: 'http://reacthook-hoidanit-backend.herokuapp.com/get-data-by-url',
+            url: 'https://reacthook-hoidanit-backend.herokuapp.com/get-data-by-url',
             data: { url: `http://metaweather.com//api/location/search/?query=${keyword}` }
         })
         if (responseSearch && responseSearch.data) {

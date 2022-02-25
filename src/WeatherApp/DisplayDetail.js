@@ -17,7 +17,7 @@ const DisplayDetail = () => {
         setIsLoading(true);
         let response = await axios({
             method: 'post',
-            url: 'http://reacthook-hoidanit-backend.herokuapp.com/get-data-by-url',
+            url: 'https://reacthook-hoidanit-backend.herokuapp.com/get-data-by-url',
             data: { url: `http://metaweather.com/api/location/${locationid}` }
         })
         let formatTime = moment(response.data.time).format();
